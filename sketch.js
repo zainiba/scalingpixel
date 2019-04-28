@@ -1,4 +1,6 @@
 let angle = 0;
+let hue = 0;
+let diameter = 80;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -6,9 +8,8 @@ function setup() {
 }
 
 function draw() {
-  let hue = 0;
-  let diameter = 80;
-  let heightChange = 15 * 20;
+
+  let heightChange = 10 * 20;
 
 
   fill(hue, 255, 255);
@@ -20,7 +21,7 @@ function draw() {
   let d1 = 10 - (sin(angle) * diameter) / 2 + diameter / 2;
   let d2 = 10 - (sin(angle + PI / 2) * diameter) / 2 + diameter / 2;
   let d3 = 10 - (sin(angle + PI) * diameter) / 2 + diameter / 2;
-  let d4 = 10 - (sin(angle + PI / 4) * diameter) / 4 + diameter / 2;
+  //let d4 = 10 - (sin(angle + PI / 4) * diameter) / 4 + diameter / 2;
 
   for (let y = 0; y < height; y += heightChange) {
     for (let x = 0; x < width; x += 15*7) {

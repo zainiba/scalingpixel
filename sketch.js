@@ -1,6 +1,7 @@
 let angle = 0;
 let hue = 0;
 let diameter = 80;
+let heightChange = 10 * 20;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -9,7 +10,7 @@ function setup() {
 
 function draw() {
 
-  let heightChange = 10 * 20;
+
 
 
   fill(hue, 255, 255);
